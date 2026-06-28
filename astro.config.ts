@@ -4,6 +4,8 @@ import mdx from "@astrojs/mdx";
 import sitemap from "@astrojs/sitemap";
 import tailwind from "@tailwindcss/vite";
 import { defineConfig, envField } from "astro/config";
+import remarkMath from "remark-math";
+import rehypeKatex from "rehype-katex";
 import expressiveCode from "astro-expressive-code";
 import icon from "astro-icon";
 import robotsTxt from "astro-robots-txt";
@@ -75,8 +77,9 @@ export default defineConfig({
 				},
 			],
 			rehypeUnwrapImages,
+			rehypeKatex,
 		],
-		remarkPlugins: [remarkReadingTime, remarkDirective, remarkGithubCard, remarkAdmonitions],
+		remarkPlugins: [remarkReadingTime, remarkDirective, remarkGithubCard, remarkAdmonitions, remarkMath],
 		remarkRehype: {
 			footnoteLabelProperties: {
 				className: [""],

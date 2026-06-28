@@ -5,20 +5,28 @@ const year = new Date().getFullYear();
 ---
 
 <footer
-	class="text-muted mt-auto flex w-full flex-col items-center justify-center gap-y-2 pt-20 pb-4 text-center align-top font-semibold sm:flex-row sm:justify-between sm:text-xs"
+	class="text-muted mt-auto flex w-full items-center justify-between pt-20 pb-4 text-sm font-semibold"
 >
-	<div class="me-0 sm:me-4">
-		&copy; {siteConfig.author}
-		{year}.<span class="inline-block">&nbsp;🚀&nbsp;{siteConfig.title}&nbsp;🌵&nbsp;</span>
+	<div>
+		&copy; {year} {siteConfig.author}
 	</div>
-	<nav aria-labelledby="footer_links" class="sm:divide-muted flex gap-x-2 sm:gap-x-0 sm:divide-x">
-		<p id="footer_links" class="sr-only">More on this site</p>
-		{
-			menuLinks.map((link) => (
-				<a class="hover:text-global-text px-4 py-2 hover:underline sm:py-0" href={link.path}>
-					{link.title}
-				</a>
-			))
-		}
-	</nav>
+
+	<div class="flex items-center gap-2">
+		<svg
+			xmlns="http://www.w3.org/2000/svg"
+			viewBox="0 0 24 24"
+			fill="none"
+			stroke="currentColor"
+			stroke-width="1.8"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+			class="h-5 w-5"
+			aria-hidden="true"
+		>
+			<rect x="3" y="5" width="18" height="14" rx="2" />
+			<path d="M3 7l9 7 9-7" />
+		</svg>
+
+		<span>pallavitekta@gmail.com</span>
+	</div>
 </footer>
