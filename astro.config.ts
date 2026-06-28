@@ -87,7 +87,7 @@ export default defineConfig({
 		},
 	},
 	vite: {
-		plugins: [tailwind(), rawFonts([".ttf", ".woff"])],
+    	plugins: [rawFonts([".ttf", ".woff"])],
 	},
 	env: {
 		schema: {
