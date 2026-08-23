@@ -2,6 +2,7 @@
 title: "Two Roads Diverged in a Wood"
 description: "How Bayes' theorem, HIV testing, and medicine taught me to think differently about probability."
 publishDate: 2020-07-09
+pinned: true
 tags:
   - medicine
   - mathematics

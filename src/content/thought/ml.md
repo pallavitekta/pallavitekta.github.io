@@ -1,5 +1,6 @@
 ---
 publishDate: 2026-06-26
+pinned: true
 ---
 
 Learning **100 Days of Machine Learning by Nitish Singh**.

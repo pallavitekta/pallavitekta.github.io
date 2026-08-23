@@ -49,13 +49,15 @@ const note = defineCollection({
 });
 
 const thought = defineCollection({
-	loader: glob({ base: "./src/content/thought", pattern: "**/*.{md,mdx}" }),
-	schema: z.object({
-		publishDate: z
-			.string()
-			.or(z.date())
-			.transform((val) => new Date(val)),
-	}),
+    loader: glob({ base: "./src/content/thought", pattern: "**/*.{md,mdx}" }),
+    schema: z.object({
+        publishDate: z
+            .string()
+            .or(z.date())
+            .transform((val) => new Date(val)),
+
+        pinned: z.boolean().default(false),
+    }),
 });
 
 const tag = defineCollection({
