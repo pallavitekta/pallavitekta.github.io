@@ -1,5 +1,5 @@
 ---
-publishDate: 2026-06-26
+publishDate: "2026-06-26T16:30:00+05:30"
 ---
 
 Learning **100 Days of Machine Learning by Nitish Singh**.
